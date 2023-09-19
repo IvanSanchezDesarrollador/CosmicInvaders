@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Invaders</title>
+    <link rel="shortcut icon" href="./imagenes/logoP.png" type="image/x-icon">
+    <script src="./jQuery/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="navar-games">
+        <div class="img">
+            <img src="./imagenes/logoImg.png" alt="">
+        </div>
+        <div class="nav">
+            <a href="index.html">Inicio</a>
+            <a href="">Acerca</a>
+            <i class='bx bxl-github' ></i>
+        </div>
+
+    </div>
+    <div class="container">
+
+        <div class="flex-canvas">
+
+            <div class="btn-colection">
+                <div class="description-game">
+                    <div class="description-game-title">
+                        <h3>Cosmic Invaders</h3>
+                        <i class='bx bxs-game'></i>
+                    </div>
+                    <p>
+                        El juego es un juego de disparos en el espacio donde el jugador controla una nave espacial y
+                        debe disparar a enemigos extraterrestres mientras esquiva sus ataques. El objetivo es acumular
+                        puntos al derrotar enemigos y sobrevivir el mayor tiempo posible. El juego incluye elementos de
+                        desplazamiento lateral y acción rápida con gráficos retro.
+                    </p>
+                    <div class="controls-all">
+                        <div>
+                            <img src="./imagenes/controles.png" alt="">
+                        </div>
+                        <div>
+                            <div class="control">
+                                <p><span style="font-weight: bold;">Flecha Izquieda:</span> Moviento a la Izquierda</p>
+                            </div>
+                            <div class="control">
+                                <p><span style="font-weight: bold;">Flecha Derecho:</span> Moviento a la Derecha</p>
+                            </div>
+                            <div class="control">
+                                <p><span style="font-weight: bold;">Espacio: </span> Disparo</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                   
+                    
+                   
+                </div>
+                <div>
+                    <button id="btn-iniciar">
+                        <i class='bx bxs-category-alt' ></i>
+                        Iniciar</button>
+                    <button id="btn-reiniciar">
+                        <i class='bx bx-revision' ></i>
+                        Reiniciar</button>
+                </div>
+
+            </div>
+
+            <div>
+                <canvas id="canvas" width="960" height="500">
+
+                </canvas>
+            </div>
+
+        </div>
+
+        <audio id="boing">
+            <source src="sonidos/boing.mp3">
+            <source src="sonidos/boing.ogg">
+        </audio>
+        <audio id="disparo">
+            <source src="sonidos/disparo.mp3">
+            <source src="sonidos/disparo.ogg">
+        </audio>
+        <audio id="intro">
+            <source src="sonidos/intro.mp3">
+            <source src="sonidos/intro.ogg">
+        </audio>
+        <audio id="fin">
+            <source src="sonidos/gameOver.mp3">
+            <source src="sonidos/gameOver.ogg">
+        </audio>
+
+        <div style="width: 100%; height: 3rem; background-color: rgb(189, 42, 42); text-align: center; display: flex; align-items: center; justify-content: center;">
+            <span>©2023 Cosmic Invaders - Todos los derechos</span>
+        </div>
+    </div>
+
+
+    <script src="./app.js"></script>
+    <script src="./cielo.js"></script>
+</body>
+
+</html>
